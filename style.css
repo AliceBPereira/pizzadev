@@ -34,11 +34,31 @@ a {
   color: var(--title-color);
 
 }
+
+.nome span {
+  color: var(--base-color);
+}
+.nome h1{
+  font: 700 1.5rem 'Dancing Script';
+  color: var(--title-color);
+
+}
  
+p{
+  font: 400 1.0rem 'Poppins', 'sans-serif';
+  color: var(--title-color);
+ }
+
 h1{
- font: 700 1.5rem 'Poppins', 'sans-serif';
+ font: 800 1.5rem 'Poppins', 'sans-serif';
  color: var(--title-color);
 }
+
+ 
+h2{
+  font: 500 1.0rem 'Poppins', 'sans-serif';
+  color: var(--title-color);
+ }
 
 .logo span {
   color: var(--base-color);
