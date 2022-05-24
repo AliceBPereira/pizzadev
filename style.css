@@ -14,6 +14,8 @@ nav{
   justify-content:space-between;
   height: 4.5rem;
   align-items: center;
+  width: 100%;
+  
 }
 img{
   width: 100%;
@@ -43,7 +45,48 @@ a {
   color: var(--title-color);
 
 }
- 
+
+.divider {
+  height: 1px;
+  background: linear-gradient(
+     270deg,
+     hsla(var(--hue),36%,57%,1) 0%,
+     hsla(var(--hue),65%,88%,0.34) 100%
+  );
+}
+nav .menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+nav.show .menu {
+  opacity: 1;
+  visibility: visible;
+  background: rgb(8, 204, 161);
+  height: 100vh;
+  width: 100vw;
+  top:0;
+  left:0;
+  position: fixed;
+
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left:0;
+  z-index: 100;
+  display: flex;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e4e4e4;
+  background-color: var(--body-color);
+  width: 100%;
+}  
+
+main {
+  margin-top: 4rem;
+}
+
 p{
   font: 400 1.0rem 'Poppins', 'sans-serif';
   color: var(--title-color);
@@ -73,23 +116,23 @@ section{
   gap: 2rem;
 }
 
-.home .texto{
+#home .texto{
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   text-align: center;
 
 }
 
-.home .texto h1{
+#home .texto h1{
   margin-bottom: 1rem;
 }
  
-.home .texto p{
+#home .texto p{
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 
 }
-.home .imagem{
+#home .imagem{
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
